@@ -61,13 +61,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // New custom colors from design input
+        bitcoinOrange: 'hsl(var(--bitcoin-orange))',
+        textPositive: 'hsl(var(--text-positive))',
+        textNegative: 'hsl(var(--text-negative))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      fontFamily: {
+        sans: ['var(--font-sans)'], // The CSS variable itself contains the full font stack including fallbacks
+        heading: ['var(--font-heading)'], // The CSS variable itself contains the full font stack including fallbacks
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
